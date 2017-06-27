@@ -16,9 +16,10 @@
           <img id="moonPic" src='moon.jpg'>
           <img id="skyPic" src='sky.jpg' /img>
           <img id="wood" src='woood.jpg' /img>
-          <img id="bark" src='Bark.jpg' /img>
+          <im/ggg id="bark" src='Bark.jpg' /img>
           <img id="ivyPic" src='Ivy.jpg' /img>
           <img id="metalRoof" src='metal.jpg' /img>
+          <img id="earthPic" src='earth.jpg' /img>
           <a-asset-item id="dogs-obj" src="dogs.obj"></a-asset-item>
           <a-asset-item id="dogs-mtl" src="dogs.mtl"></a-asset-item>
           <a-asset-item id="dolphin.mtl" src="dolphin.mtl"></a-asset-item>
@@ -26,20 +27,26 @@
           
       </a-asset>
       
-      <a-entity scale="0.5 0.5 0.5" position="-3 0.5 -1" obj-model="obj: #dogs-obj; mtl: #dogs-mtl"></a-entity>
+       <a-entity scale="0.5 0.5 0.5" position="-3 0.5 -1" obj-model="obj: #dogs-obj; mtl: #dogs-mtl"></a-entity>
+       <a-entity text="value: Zoë's World!;"></a-entity>
        <a-entity scale="1 1 1" color="#87AECE" position="-5 0.5 -1" obj-model="obj: #dolphin-obj; mtl: #dolphin-mtl"></a-entity>
-      <a-ocean color="#92E2E2" width="25" density="15" speed="2"></a-ocean>
-      <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
-           <a-box src="wood.jpg" position="0 0 -5" rotation="0 70 90"
-    scale="2 2 2"></a-box>
-      <a-cylinder position="1 0.85 -3" radius="0.2" height="2.5" material="src:#bark"></a-cylinder>
+       <a-entity position="0 2.25 -15" particle-system="preset: snow"></a-entity>
+       <a-ocean color="#4D97AE" width="25" density="15" speed="2"></a-ocean>
+       <a-ocean color="#92E2E2" width="25" density="15" speed="1"></a-ocean>
+       <a-ocean color="#4DAEA2" width="25" density="15" speed="1"></a-ocean>
+       <a-box src="wood.jpg" position="10.714 1.525 -10.03" rotation="0 70 90" scale="2.5 2.5 2.5"></a-box>
+       <a-cylinder position="1 0.75 -2" radius="0.2" height="2.5" material="src:#bark"></a-cylinder>
+       <a-cylinder position="2 0.85 -3" radius="0.2" height="2.5" material="src:#bark"></a-cylinder>
        <a-cylinder position="1 0.95 -4" radius="0.2" height="2.5" material="src:#bark"></a-cylinder>
-      <a-sphere material="src:#moonPic" radius=".7" position="10 5.8 -2"></a-sphere>
-      <a-cone position="0 1.3 -5" material="src:#metalRoof" radius-bottom="1.3" radius-top="0.5"></a-cone>
-      <a-plane position="0 0 -4" rotation="-90 0 0" width="8" height="8" material="src:#grassPic"></a-plane>
-      <a-cone position="1 2.5 -3" material="src:#ivyPic" radius-bottom=".5" height="2" radius-top="0.1"></a-cone>
-      <a-cone position="1 2.5 -4" material="src:#ivyPic" radius-bottom=".5" height="2" radius-top="0.1"></a-cone>
-      <a-sky material="src:#skyPic"</a-sky>
+       <a-cone position="1 2.5 -2" material="src:#ivyPic" radius-bottom=".5" height="2" radius-top="0.1"></a-cone>
+       <a-cone position="2 2.5 -3" material="src:#ivyPic" radius-bottom=".5" height="2" radius-top="0.1"></a-cone>
+       <a-cone position="1 2.5 -4" material="src:#ivyPic" radius-bottom=".5" height="2" radius-top="0.1"></a-cone>
+       <a-cone position="10.828 3.274 -9.960" material="src:#metalRoof" radius-bottom="1.3" radius-top="0.5"></a-cone>
+       <a-cone position="0 1 -2" material="src:#metalRoof" scale="0.5 0.5 0.5" radius-bottom="0.5" radius-top="1"></a-cone>
+       <a-sphere material="src:#moonPic" radius=".7" position="10 5.8 -2"></a-sphere>
+       <a-sphere material="src:#earthPic" radius=".7" position="-10 5.8 2"></a-sphere>
+       <a-plane position="0 0 -8.030" rotation="-90 0 90" width="8" height="25" material="src:#grassPic"></a-plane>
+       <a-sky material="src:#skyPic"</a-sky>
       
       </a-scene>
   </body>
